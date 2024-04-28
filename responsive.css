@@ -1,0 +1,164 @@
+/* Default styling */
+footer {
+    background-color: black;
+    /* margin-top: 50px; */
+    /* height: 400px; */
+}
+
+.footer-menu {
+    display: flex;
+    padding: 20px;
+    color: white;
+    margin-left: 150px;
+}
+
+.base {
+    flex-basis: 25%;
+    width: 160px;
+}
+
+.base h1 {
+    color: white;
+}
+
+.footer-menu h1 {
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.footer-menu li {
+    text-align: left;
+    list-style: none;
+    padding-bottom: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #563434;
+}
+
+.base span {
+    display: flex;
+}
+
+.base span p {
+    padding-right: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .footer-menu {
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+
+    .base {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+/* Default styles */
+
+.menu {
+    background-color: whitesmoke;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: black;
+}
+
+.logo {
+    width: 50px;
+    position: var(header);
+    transform: translate(4rem);
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: lightblue;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+
+ul li a:hover {
+    background: orange;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    z-index: 1000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .menu ul li a {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 30px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
